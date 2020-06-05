@@ -9,10 +9,10 @@ from django.core.exceptions import PermissionDenied
 from django.utils.text import slugify
 from django import forms
 
-from wagtail.wagtailcore.models import Page
-from wagtail.wagtailcore.utils import resolve_model_string
-from wagtail.wagtailadmin.edit_handlers import FieldPanel
-from wagtail.contrib.wagtailroutablepage.models import RoutablePageMixin, route
+from wagtail.core.models import Page
+from wagtail.core.utils import resolve_model_string
+from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 
 
 class ForumPageMixin(RoutablePageMixin):
